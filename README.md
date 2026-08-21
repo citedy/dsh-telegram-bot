@@ -4,7 +4,7 @@ Self-hosted Telegram front for [DeepSeek Harness](https://github.com/deepseek-ai
 
 **Demo (19s):** a full loop — browse sessions, open a chat, run a task, watch live progress, then act on a PR.
 
-https://github.com/citedy/dsh-telegram-bot/releases/download/assets-v1/tg_dsh_harness_demo.MP4
+https://github.com/citedy/dsh-telegram-bot/releases/download/v0.1.2/tg_dsh_harness_demo.MP4
 
 > Different by design from `dsh-imessage`-style bridges: no hosted middleman, no accounts on third-party services. You create your own bot in 2 minutes and own the whole pipeline.
 
