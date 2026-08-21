@@ -1,0 +1,40 @@
+{
+  "name": "dsh-plugin-telegram",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "Self-hosted Telegram front for DeepSeek Harness (dsh): pick a project, join dsh sessions as chats, run headless agents from Telegram. No external services — just your bot token.",
+  "license": "MIT",
+  "bin": {
+    "dsh-plugin-telegram": "scripts/setup.mjs",
+    "dsh-tg-bot": "scripts/bot.mjs"
+  },
+  "files": [
+    "scripts",
+    "deploy",
+    "docs",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ],
+  "scripts": {
+    "bot": "node scripts/bot.mjs",
+    "start": "node scripts/bot.mjs",
+    "setup": "node scripts/setup.mjs"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "telegram",
+    "bot",
+    "ai-agent",
+    "self-hosted"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/citedy/dsh-telegram-bot.git"
+  }
+}

@@ -1,0 +1,23 @@
+[Unit]
+Description=DSH Telegram bot (front for DeepSeek Harness headless agents)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# dedicated user (create one, or change to yours)
+User=dsh
+Group=dsh
+EnvironmentFile=/etc/dsh/dsh-tg-bot.env
+# path where you cloned this repo — adjust to your install
+WorkingDirectory=/opt/dsh-telegram-bot
+ExecStart=/usr/bin/node scripts/bot.mjs
+Restart=always
+RestartSec=5
+# long headless agent sessions
+TimeoutStopSec=90
+# internal headless session timeout is 20 min (DEFAULT_TIMEOUT_MIN in agent.mjs)
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
